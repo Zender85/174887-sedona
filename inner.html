@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Седона - список отелей</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+      <header>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <!--абсолютное позиционирование, display: block; для ссылки .header-logo, логотип задать бэкграендом-->
+        <a href="#" class="header-logo"></a>
+      </header>
+      <main>
+      	<div class="filters">
+      		<form class="hotel-filters" action="https://echo.htmlacademy.ru" method="post">
+      			<div class="infrastructure">
+      				<b>Инфраструктура</b>
+	      			<input type="checkbox" name="pool" id="pool" checked>
+	      			<label for="pool">Бассейн</label>
+	      			<input type="checkbox" name="parking" id="parking">
+	      			<label for="parking">Парковка</label>
+	      			<input type="checkbox" name="wifi" id="wifi">
+	      			<label for="wifi">Wi-Fi</label>
+      			</div>
+            
+      			<div class="accomodation">
+      				<b>Тип жилья</b>
+	      			<input type="checkbox" name="hotel" id="hotel" checked>
+	      			<label for="hotel">Гостиницы</label>
+	      			<input type="checkbox" name="motel" id="motel" checked>
+	      			<label for="motel">Мотель</label>
+	      			<input type="checkbox" name="apartment" id="apartment" checked>
+	      			<label for="apartment">Апартаменты</label>
+      			</div>
+
+      			<div class="cost">
+      				<b>Стоимость в сутки (Р)</b>
+      				<input type="number" name="from-cost" placeholder="От 0">
+      				<input type="number" name="till-cost" placeholder="До 3000">
+      				<input type="range" name="costcount">
+              <input type="submit" name="hotelsearch" value="Показать">
+      			</div>
+
+      			<div></div>
+      		</form>
+      	</div>
+      </main>
+	    <footer class="main-footer">
+	        <div class="hashtag">
+	          <span>#Visitsedona</span>
+	        </div>
+	        <div class="footer-social">
+	          <a class="social-link social-link-twitter" href="#">Twitter</a>
+	          <a class="social-link social-link-facebook" href="#">Facebook</a>
+	          <a class="social-link social-link-youtube" href="#">Youtube</a>
+	        </div>
+	        <div class="footer-copyright">
+	          <span>Website by:</span>
+	          <a class="footer-logo" href="#"></a>        
+	        </div>
+	    </footer>
+    </div>
+	</body>
+</html>
