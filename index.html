@@ -29,85 +29,80 @@
       </header>
 
       <main>
-        <!--для блока .block1 задать подложку с помощью background-image и белую маску с помощью :after-->
-        <div class="block1">
-          <div class="block1-photo">
-            <!--надписи сделать спрайтом-->
-            <div class="block1-text block1-text-welcome"></div>
-            <div class="block1-text block1-text-sedona"></div>
-            <div class="block1-text block1-text-slogan"></div>
+        <!--для блока .sedona-photo задать подложку с помощью background-image и белую маску с помощью :after-->
+        <div class="sedona-photo">
+          <!--надписи сделать спрайтом-->
+          <div class="sedona-text sedona-text-welcome"></div>
+          <div class="sedona-text sedona-text-name"></div>
+          <div class="sedona-text sedona-text-slogan"></div>
+        </div>
+        <div class="sedona-info">
+          <span class="sedona-info-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</span>
+          <span class="sedona-info-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+        </div>
+
+        <!--причина первая-->
+        <div class="reason1 clearfix">
+          <div class="reason1-info">
+            <b>Настоящий городок</b>
+            <span class="reason-number">&mdash; №1 &mdash;</span>
+            <span class="reason-text">Сезона - не аттракцион для туристов, там течет своя жизнь</span>
           </div>
-          <div class="block1-intro">
-            <span class="block2-intro-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</span>
-            <span class="block2-intro-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+          <div class="reason1-photo">
+            <img src="img/reason1.png" alt="Настоящий городок" width="800" height="256">
+          </div>
+        </div>
+        <!--особенности-->
+        <div class="features">
+          <div class="feature1">
+            <img src="img/home.png" alt="Жилье">
+            <b>Жилье</b>
+            <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
+          </div>
+          <div class="feature2">
+            <img src="img/food.png" alt="Еда">
+            <b>Еда</b>
+            <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+          </div>
+          <div class="feature3">
+            <img src="img/gift.png" alt="Сувениры">
+            <b>Сувениры</b>
+            <span>Не только китайского, но и местного производства!</span>
+          </div>
+        </div>
+        <!--причина вторая-->
+        <div class="reason2 clearfix">
+          <div class="reason2-photo">
+            <img src="img/reason2.png" alt="Мост Дьявола" width="800" height="256">
+          </div>
+          <div class="reason2-info">
+            <b>Там есть<br>мост дьявола</b>
+            <span class="reason-number">&mdash; №2 &mdash;</span>
+            <span class="reason-text">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</span>
           </div>
         </div>
 
-        <!--БЛОК2 - причина первая-->
-        <div class="block2">
-          <div class="block2-reason clearfix">
-            <div class="block2-reason-info">
-              <b>Настоящий городок</b>
-              <span class="reason-number">&mdash; №1 &mdash;</span>
-              <span class="reason-text">Сезона - не аттракцион для туристов, там течет своя жизнь</span>
-            </div>
-            <div class="block2-reasonphoto">
-              <img src="img/reason1.png" alt="Настоящий городок" width="800" height="256">
-            </div>
-          </div>
-          <div class="block2-reason-features">
-            <div class="feature1">
-              <img src="img/home.png" alt="Жилье">
-              <b>Жилье</b>
-              <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
-            </div>
-            <div class="feature2">
-              <img src="img/food.png" alt="Еда">
-              <b>Еда</b>
-              <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
-            </div>
-            <div class="feature3">
-              <img src="img/gift.png" alt="Сувениры">
-              <b>Сувениры</b>
-              <span>Не только китайского, но и местного производства!</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="block3 clearfix">
-          <div class="block3-reason">
-            <div class="block3-reasonphoto">
-              <img src="img/reason2.png" alt="Мост Дьявола" width="800" height="256">
-            </div>
-            <div class="block2-reason-info">
-              <b>Там есть<br>мост дьявола</b>
-              <span class="reason-number">&mdash; №2 &mdash;</span>
-              <span class="reason-text">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="block4">
-          <div class="block4-reason">
+        <div class="rest-reasons">
+          <div class="reason3">
             <b>Небольшая<br>площадь</b>
             <span class="reason-number">&mdash; №3 &mdash;</span>
             <span class="reason-text">Все достопримечательности<br>находятся очень близко</span>
           </div>
-          <div class="block4-reason">
+          <div class="reason4">
             <b>Красивая<br>дорога</b>
             <span class="reason-number">&mdash; №4 &mdash;</span>
             <span class="reason-text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</span>
           </div>
-          <div class="block4-reason">
+          <div class="reason5">
             <b>Мало<br>туристов</b>
             <span class="reason-number">&mdash; №5 &mdash;</span>
             <span class="reason-text">Большинство едет в гранд каньон и<br>толпится там</span>
           </div>
         </div>
 
-        <div class="block5">
+        <div class="hotel-choose">
           <div class="interest">
-            <b>Заинтересовались?</b>
+            <h2>Заинтересовались?</h2>
             <span>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</span>
           </div>
           <!--Предполагаю, что в этом блоке будет айфрейм карты-->
@@ -115,8 +110,8 @@
             <img src="img/map.png" alt="Карта" width="1280" height="747">
           </div>
           <!--Всплывающая форма-->
-          <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
-            <h2>Поиск гостиницы в седоне</h2>
+          <form class="hotel-searchform" action="https://echo.htmlacademy.ru" method="post">
+            <h3>Поиск гостиницы в седоне</h3>
             <div class="arrival">
               <label for="arrival-date">Дата заезда</label>
               <input type="date" name="arrive" id="arrival-date">
