@@ -31,7 +31,7 @@
       	<div class="filters">
       		<form class="hotel-filters" action="https://echo.htmlacademy.ru" method="post">
       			<div class="infrastructure">
-      				<b>Инфраструктура</b>
+      				<b>Инфраструктура:</b>
 	      			<input type="checkbox" name="pool" id="pool" checked>
 	      			<label for="pool">Бассейн</label>
 	      			<input type="checkbox" name="parking" id="parking">
@@ -39,9 +39,9 @@
 	      			<input type="checkbox" name="wifi" id="wifi">
 	      			<label for="wifi">Wi-Fi</label>
       			</div>
-            
+
       			<div class="accomodation">
-      				<b>Тип жилья</b>
+      				<b>Тип жилья:</b>
 	      			<input type="checkbox" name="hotel" id="hotel" checked>
 	      			<label for="hotel">Гостиницы</label>
 	      			<input type="checkbox" name="motel" id="motel" checked>
@@ -51,15 +51,85 @@
       			</div>
 
       			<div class="cost">
-      				<b>Стоимость в сутки (Р)</b>
+      				<b>Стоимость в сутки (Р):</b>
       				<input type="number" name="from-cost" placeholder="От 0">
       				<input type="number" name="till-cost" placeholder="До 3000">
       				<input type="range" name="costcount">
               <input type="submit" name="hotelsearch" value="Показать">
       			</div>
-
-      			<div></div>
       		</form>
+      	</div>
+  			<div class="results">
+  				<!--Заголовок результатов-->
+  				<header class="results-header">
+  					<b>Найдено:3</b>
+  					<span>Сортировка:</span>
+  					<ul class="sort-by">
+  						<li class="active">По цене</li>
+  						<li><a href="#">По типу</a></li>
+  						<li><a href="#">По рейтингу</a></li>
+  					</ul>
+  					<div class="results-arrows">
+  						<a class="arrow-up" href=""></a>
+  						<a class="arrow-down" href=""></a>
+  					</div>
+  				</header>
+  				<!--Список отелей-->
+  				<div class="results-content">
+  					<div class="results-content-item1">
+  						<div class="hotels-image">
+  							<img src="img/hotel1.png" alt="Amara Resort & Spa" width="135" height="90">
+  						</div>
+  						<div class="hotels-info">
+  							<span class="hotels-name">Amara Resort &amp; Spa</span>
+  							<span class="hotels-type">Гостиница</span>
+  							<span class="hotels-cost">От 4000 Р.</span>
+  							<a href="#" class="hotels-about">Подробнее</a>
+  							<a href="#" class="hotels-book">Забронировать</a>
+  						</div>
+  						<div class="hotels-rating">
+  							<!--Бэкграундом из спрайта звезды-->
+  							<span class="rating-stars"></span>
+  							<span class="rating-number">Рейтинг: 8.5</span>
+  						</div>
+  					</div>
+
+  					<div class="results-content-item2">
+  						<div class="hotels-image">
+  							<img src="img/hotel2.png" alt="Desert Quail Inn" width="135" height="90">
+  						</div>
+  						<div class="hotels-info">
+  							<span class="hotels-name">Desert Quail Inn</span>
+  							<span class="hotels-type">Мотель</span>
+  							<span class="hotels-cost">От 3000 Р.</span>
+  							<a href="#" class="hotels-about">Подробнее</a>
+  							<a href="#" class="hotels-book">Забронировать</a>
+  						</div>
+  						<div class="hotels-rating">
+  							<!--Бэкграундом из спрайта звезды-->
+  							<span class="rating-stars"></span>
+  							<span class="rating-number">Рейтинг: 8.9</span>
+  						</div>
+  					</div>
+
+  					<div class="results-content-item3">
+  						<div class="hotels-image">
+  							<img src="img/hotel3.png" alt="Villas at Poco Diablo" width="135" height="90">
+  						</div>
+  						<div class="hotels-info">
+  							<span class="hotels-name">Villas at Poco Diablo</span>
+  							<span class="hotels-type">Апартаменты</span>
+  							<span class="hotels-cost">От 2000 Р.</span>
+  							<a href="#" class="hotels-about">Подробнее</a>
+  							<a href="#" class="hotels-book">Забронировать</a>
+  						</div>
+  						<div class="hotels-rating">
+  							<!--Бэкграундом из спрайта звезды-->
+  							<span class="rating-stars"></span>
+  							<span class="rating-number">Рейтинг: 9.2</span>
+  						</div>
+  					</div>
+  				</div>
       	</div>
       </main>
 	    <footer class="main-footer">
