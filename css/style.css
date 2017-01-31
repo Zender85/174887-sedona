@@ -3,14 +3,284 @@ body {
 	line-height: 21px;
 	color: #000;
 	font-weight: normal;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	text-transform: uppercase;
+	margin: 0;
 }
+
 h2 {
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0;
 }
+
 h3 {
 	font-size: 21px;
 	line-height: 21px;
+} 
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	border: 5px solid orange;
+	box-shadow: 0 0 15px;
+}
+
+header {
+	border: 3px solid #ff0000;
+}
+
+.main-navigation {
+	text-align: center;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sedona-photo {
+	position: relative;
+	background: url('../img/sedona-background.jpg');
+	height: 773px;
+	border: 3px solid #000;
+}
+
+.sedona-photo:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 57px;
+	background-image: url('../img/white.png');
+}
+
+.sedona-text-welcome {
+	position: relative;
+	background: url('../img/welcome.png');
+	height: 86px;
+	width: 188px;
+	top: 75px;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+.sedona-text-name {
+	position: relative;
+	background: url('../img/sedona.png');
+	height: 78px;
+	width: 458px;
+	top: 215px;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+.sedona-text-slogan {
+	position: relative;
+	background: url('../img/slogan.png');
+	width: 296px;
+	height: 80px;
+	top: 348px;
+	margin: 0 auto;
+	border: 3px solid #000;
+}
+
+.sedona-info {
+	padding-top: 63px;
+	padding-bottom: 56px;
+	text-align: center;
+}
+
+.sedona-info h2 {
+	margin-bottom: 35px;
+}
+
+.real-town-info {
+	float: left;
+	width: 400px;
+	padding: 37px 0;
+	text-align: center;
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.reason-number {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+.reason-text {
+
+}
+
+.real-town-photo {
+	float: right;
+	line-height: 0;
+}
+
+.features {
+	padding-top: 60px;
+	padding-bottom: 85px;
+}
+
+.features-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	text-align: center;
+}
+
+.features-item:first-child {
+	float: left;
+}
+
+.features-item:last-child {
+	float: right;
+}
+
+.devil-bridge-photo {
+	float: left;
+	line-height: 0;
+}
+
+.devil-bridge-info {
+	float: right;
+	text-align: center;
+	width: 400px;
+	padding: 37px 0;
+	color: #fff;
+	background-color: #81b3d2;
+}
+
+.devil-bridge-info h2 {
+	margin-bottom: 35px;
+}
+
+.rest {
+	padding-top: 60px;
+	padding-bottom: 46px;
+	background: #eeeeee;
+}
+
+.rest-reason {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	text-align: center;
+}
+
+.square {
+	float: left;
+}
+
+.tourists {
+	float: right;
+}
+
+.hotel-choose {
+	position: relative;
+}
+.hotel-choose-header {
+	padding-top: 60px;
+	padding-bottom: 135px;
+	text-align: center;
+}
+
+.interested {
+	display: block;
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+
+.hotel-searchform {
+	position: absolute;
+	max-width: 568px;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	text-align: center;
+	box-shadow: 0 0 15px;
+}
+
+.hotel-searchform h2 {
+	color: #fff;
+	line-height: 21px;
+	padding: 35px 0;
+	background-color: #766357;
+}
+/*==== FOOTER ====*/
+
+.main-footer {
+	position: relative;
+}
+
+.map {
+	line-height: 0;
+}
+
+.footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 35px 0;
+	background-image: url('../img/footer-background.png');
+}
+
+.hashtag {
+	margin-left: 135px;
+	max-width: 136px;
+	overflow: hidden;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.footer-social {
+	font-size: 0;
+}
+
+.social-link {
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	margin-right: 5px;
+}
+
+.social-link-twitter {
+	background: #81b3d2 url('../img/twitter.png') no-repeat 50% 50%; 
+}
+
+.social-link-facebook {
+	background: #81b3d2 url('../img/facebook.png') no-repeat 50% 50%; 
+}
+
+.social-link-youtube {
+	background: #81b3d2 url('../img/youtube.png') no-repeat 50% 50%; 
+}
+
+.footer-copyright {
+	float: right;
+	position: relative;
+}
+
+.footer-copyright:after {
+	content: '';
+	position: absolute;
+	width: 113px;
+	height: 39px;
+	right: -122px;
+	top: -9px;
+	background-image: url('../img/footer-logo.png');
 }
