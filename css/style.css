@@ -6,6 +6,7 @@ body {
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	text-transform: uppercase;
 	margin: 0;
+	background-color: #f2f2f2;
 }
 
 h2 {
@@ -19,6 +20,11 @@ h3 {
 	line-height: 21px;
 } 
 
+ul {
+	margin: 0;
+	padding: 0; 
+}
+
 .clearfix:after {
 	content: "";
 	display: table;
@@ -28,16 +34,18 @@ h3 {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	border: 5px solid orange;
-	box-shadow: 0 0 15px;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px #dbdbdb;
 }
 
-header {
-	border: 3px solid #ff0000;
+.main-header {
+	position: relative;
+	padding: 15px 0;
 }
 
-.main-navigation {
-	text-align: center;
+.main-navigation ul{
+	display: flex;
+	justify-content: space-around;
 }
 
 .main-navigation li {
@@ -45,11 +53,29 @@ header {
 	vertical-align: top;
 }
 
+.main-navigation a{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #000000;
+}
+
+.header-logo {
+	position: absolute;
+	width: 137px;
+	height: 69px;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0 auto;
+	background-image: url('../img/header-logo.png');
+}
 .sedona-photo {
 	position: relative;
 	background: url('../img/sedona-background.jpg');
 	height: 773px;
-	border: 3px solid #000;
 }
 
 .sedona-photo:after {
@@ -68,7 +94,6 @@ header {
 	width: 188px;
 	top: 75px;
 	margin: 0 auto;
-	border: 3px solid #000;
 }
 
 .sedona-text-name {
@@ -78,7 +103,6 @@ header {
 	width: 458px;
 	top: 215px;
 	margin: 0 auto;
-	border: 3px solid #000;
 }
 
 .sedona-text-slogan {
@@ -88,7 +112,6 @@ header {
 	height: 80px;
 	top: 348px;
 	margin: 0 auto;
-	border: 3px solid #000;
 }
 
 .sedona-info {
@@ -114,10 +137,6 @@ header {
 	display: block;
 	padding-top: 5px;
 	padding-bottom: 30px;
-}
-
-.reason-text {
-
 }
 
 .real-town-photo {
@@ -164,8 +183,8 @@ header {
 }
 
 .rest {
-	padding-top: 60px;
-	padding-bottom: 46px;
+	padding-top: 30px;
+	padding-bottom: 45px;
 	background: #eeeeee;
 }
 
@@ -189,7 +208,6 @@ header {
 }
 .hotel-choose-header {
 	padding-top: 60px;
-	padding-bottom: 135px;
 	text-align: center;
 }
 
@@ -199,22 +217,36 @@ header {
 	margin-bottom: 35px;
 }
 
+
+.hotel-searchform-trigger {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	margin-top: 52px;
+	padding: 33px 0;
+	z-index: 2;
+	font-size: 21px;
+	line-height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	max-width: 568px;
+	line-height: 21px;
+	background-color: #766357;
+}
+
 .hotel-searchform {
 	position: absolute;
 	max-width: 568px;
 	z-index: 1;
-	left: 0;
 	right: 0;
+	left: 0;
+	margin: 0 auto;
 	text-align: center;
 	box-shadow: 0 0 15px;
+	background-color: #ffffff;
 }
 
-.hotel-searchform h2 {
-	color: #fff;
-	line-height: 21px;
-	padding: 35px 0;
-	background-color: #766357;
-}
 /*==== FOOTER ====*/
 
 .main-footer {
