@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="container">
-      <header>
+      <header class="main-header">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -21,7 +21,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="#">Гостиницы</a>
+              <a class="menu-active">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -32,7 +32,7 @@
       	<div class="filters">
       		<form class="hotel-filters" action="https://echo.htmlacademy.ru" method="post">
       			<div class="infrastructure">
-      				<b>Инфраструктура:</b>
+      				<h4>Инфраструктура:</h4>
 	      			<input type="checkbox" name="pool" id="pool" checked>
 	      			<label for="pool">Бассейн</label>
 	      			<input type="checkbox" name="parking" id="parking">
@@ -42,7 +42,7 @@
       			</div>
 
       			<div class="accomodation">
-      				<b>Тип жилья:</b>
+      				<h4>Тип жилья:</h4>
 	      			<input type="checkbox" name="hotel" id="hotel" checked>
 	      			<label for="hotel">Гостиницы</label>
 	      			<input type="checkbox" name="motel" id="motel" checked>
@@ -52,11 +52,15 @@
       			</div>
 
       			<div class="cost">
-      				<b>Стоимость в сутки (Р):</b>
-      				<input type="number" name="from-cost" placeholder="От 0">
-      				<input type="number" name="till-cost" placeholder="До 3000">
-      				<input type="range" name="costcount">
-              <input type="submit" name="hotelsearch" value="Показать">
+      				<h4>Стоимость в сутки (Р):</h4>
+              <div class="cost-fieldset">
+        				<input type="number" name="from-cost" placeholder="От 0">
+        				<input type="number" name="till-cost" placeholder="До 3000">
+              </div>
+              <div class="range">      				
+                <input type="range" name="costcount">
+              </div>
+              <button class="hotels-show" type="submit">Показать</button>
       			</div>
       		</form>
       	</div>
@@ -133,20 +137,22 @@
   				</div>
       	</div>
       </main>
-	    <footer class="main-footer">
-	        <div class="hashtag">
-	          <span>#Visitsedona</span>
-	        </div>
-	        <div class="footer-social">
-	          <a class="social-link social-link-twitter" href="#">Twitter</a>
-	          <a class="social-link social-link-facebook" href="#">Facebook</a>
-	          <a class="social-link social-link-youtube" href="#">Youtube</a>
-	        </div>
-	        <div class="footer-copyright">
-	          <span>Website by:</span>
-	          <a class="footer-logo" href="#"></a>        
-	        </div>
-	    </footer>
+      <footer class="main-footer">          
+        <div class="footer-row footer-hotels clearfix">
+          <div class="hashtag">
+            <span>#Visitsedona</span>
+          </div>
+          <div class="footer-social">
+            <a class="social-link social-link-twitter" href="#">Twitter</a>
+            <a class="social-link social-link-facebook" href="#">Facebook</a>
+            <a class="social-link social-link-youtube" href="#">Youtube</a>
+          </div>
+          <div class="footer-copyright">
+            <span>Website by</span>
+            <a class="footer-logo" href="#"></a>        
+          </div>
+        </div>
+      </footer>
     </div>
 	</body>
 </html>
