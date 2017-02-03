@@ -44,10 +44,6 @@ ul {
 	padding: 15px 6%;
 }
 
-.main-navigation ul{
-
-}
-
 .main-navigation li {
 	display: inline-block;
 	vertical-align: top;
@@ -301,15 +297,15 @@ ul {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-image: url("../img/sprite.png");
+	background-image: url('../img/sprite.png');
 	background-repeat: no-repeat; 
 
 }
 
 .social-link-twitter:before {
 	width: 17px;
-  height: 15px;
-  background-position: -10px -985px;
+	height: 15px;
+	background-position: -10px -985px;
 }
 
 .social-link-facebook:before {
@@ -336,7 +332,8 @@ ul {
 	height: 39px;
 	right: -122px;
 	top: -9px;
-	background-image: url('../img/footer-logo.png');
+	background-image: url('../img/sprite.png');
+	background-position: -10px -523px;
 }
 
 /*==== HOTELS PAGE STYLES ====*/
@@ -449,10 +446,6 @@ ul {
 	text-decoration: none;
 }
 
-.results-content {
-	
-}
-
 .results-content-item {
 	position: relative;
 	padding: 0 6%;
@@ -474,10 +467,6 @@ ul {
 	max-width: 360px;
 }
 
-.hotels-info h2 {
-
-}
-
 .hotels-info span {
 	display: inline-block;
 	vertical-align: top;
@@ -489,24 +478,24 @@ ul {
 	position: absolute;
 	right: 6%;
 	top: 30px;
-  background-image: url("../img/sprite.png");
+	background-image: url('../img/sprite.png');
 }
 
 .amara-resort {
 	width: 89px;
-  height: 17px;
+  	height: 17px;
 	background-position: -10px -948px;
 }
 
 .desert-quail {
 	width: 65px;
-  height: 17px;
+  	height: 17px;
 	background-position: -10px -948px;
 }
 
 .poco-diablo {
 	width: 42px;
-  height: 17px;
+  	height: 17px;
 	background-position: -10px -948px;
 }
 
