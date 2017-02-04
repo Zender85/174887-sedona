@@ -55,12 +55,26 @@ ul {
 	float: right;
 	text-align: right;
 }
-.main-navigation a{
+
+.main-navigation a {
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 25px;
 	color: #000000;
+}
+
+.main-navigation a:hover {
+	color: #81b3d2;
+}
+
+.main-navigation a:focus {
+	opacity: 0.3;
+}
+
+.main-navigation .menu-active {
+	color: #766357;
+	cursor: pointer;
 }
 
 .header-logo {
@@ -72,12 +86,13 @@ ul {
 	left: 0;
 	z-index: 1;
 	margin: 0 auto;
-	background-image: url('../img/header-logo.png');
 }
+
 .sedona-photo {
 	position: relative;
 	background: url('../img/sedona-background.jpg');
-	height: 773px;
+	min-height: 510px;
+	max-height: 773px;
 }
 
 .sedona-photo:after {
@@ -90,29 +105,35 @@ ul {
 }
 
 .sedona-text-welcome {
-	position: relative;
+	position: absolute;
 	background: url('../img/welcome.png');
 	height: 86px;
 	width: 188px;
 	top: 75px;
+	right: 0;
+	left: 0;
 	margin: 0 auto;
 }
 
 .sedona-text-name {
-	position: relative;
+	position: absolute;
 	background: url('../img/sedona.png');
 	height: 78px;
 	width: 458px;
 	top: 215px;
+	right: 0;
+	left: 0;
 	margin: 0 auto;
 }
 
 .sedona-text-slogan {
-	position: relative;
+	position: absolute;
 	background: url('../img/slogan.png');
 	width: 296px;
 	height: 80px;
-	top: 348px;
+	bottom: 80px;
+	right: 0;
+	left: 0;
 	margin: 0 auto;
 }
 
@@ -124,6 +145,12 @@ ul {
 
 .sedona-info h2 {
 	margin-bottom: 35px;
+}
+
+.real-town {
+	position: relative;
+	max-height: 399px;
+	overflow: hidden;
 }
 
 .real-town-info {
@@ -141,8 +168,15 @@ ul {
 	padding-bottom: 30px;
 }
 
+.reason-text {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 280px;
+}
+
 .real-town-photo {
-	float: right;
+	position: absolute;
+	right: 0;
 	line-height: 0;
 }
 
@@ -154,20 +188,24 @@ ul {
 .features-item {
 	display: inline-block;
 	vertical-align: top;
-	width: 400px;
+	width: 397px;
 	text-align: center;
 }
 
-.features-item:first-child {
-	float: left;
+.features-item span {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 300px;
 }
 
-.features-item:last-child {
-	float: right;
+.devil-bridge {
+	position: relative;
+	max-height: 399px;
+	overflow: hidden;
 }
 
 .devil-bridge-photo {
-	float: left;
+	position: absolute;
 	line-height: 0;
 }
 
@@ -182,6 +220,10 @@ ul {
 
 .devil-bridge-info h2 {
 	margin-bottom: 35px;
+}
+
+.devil-bridge .reason-text {
+	max-width: 310px;
 }
 
 .rest {
@@ -208,6 +250,7 @@ ul {
 .hotel-choose {
 	position: relative;
 }
+
 .hotel-choose-header {
 	padding-top: 60px;
 	text-align: center;
@@ -218,7 +261,6 @@ ul {
 	font-size: 30px;
 	margin-bottom: 35px;
 }
-
 
 .hotel-searchform-trigger {
 	position: relative;
@@ -446,6 +488,43 @@ ul {
 	text-decoration: none;
 }
 
+.results-arrows {
+	float: right;
+}
+
+.results-arrows a {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 11px;
+	height: 10px;
+	margin-left: 9px;
+	background-image: url('../img/sprite.png');
+}
+
+.arrow-up {
+	background-position: -10px -130px;
+}
+
+.arrow-up-active {
+	background-position: -10px -100px;
+}
+
+.arrow-up:hover {
+	background-position: -10px -160px;
+}
+
+.arrow-down {
+	background-position: -10px -40px;
+}
+
+.arrow-down-active {
+	background-position: -10px -10px;
+}
+
+.arrow-down:hover {
+	background-position: -10px -70px;
+}
+
 .results-content-item {
 	position: relative;
 	padding: 0 6%;
@@ -478,24 +557,15 @@ ul {
 	position: absolute;
 	right: 6%;
 	top: 30px;
+}
+
+.rating-stars li {
+	display: inline-block;
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin-left: 3px;
 	background-image: url('../img/sprite.png');
-}
-
-.amara-resort {
-	width: 89px;
-  	height: 17px;
-	background-position: -10px -948px;
-}
-
-.desert-quail {
-	width: 65px;
-  	height: 17px;
-	background-position: -10px -948px;
-}
-
-.poco-diablo {
-	width: 42px;
-  	height: 17px;
 	background-position: -10px -948px;
 }
 
