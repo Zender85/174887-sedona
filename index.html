@@ -111,30 +111,29 @@
           </header>
           <!--Всплывающая форма-->
           <form class="hotel-searchform" action="https://echo.htmlacademy.ru" method="post">
-            
             <div class="arrival">
-              <label for="arrival-date">Дата заезда</label>
-              <input type="text" name="arrive" id="arrival-date">
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="text" name="arrive" id="arrival-date" value="24 Апреля 2017">
               <span class="date-icon"></span>
             </div>
             <div class="departure">
-              <label for="departure-date">Дата выезда</label>
-              <input type="text" name="depart" id="departure-date">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="text" name="depart" id="departure-date" value="4 Июля 2017">
               <span class="date-icon"></span>
             </div>
             <div class="adult">
-              <label for="adult-number"></label>
-              <input type="number" name="adult-number" id="adult-number">
-              <span class="adult-minus">-</span>
-              <span class="adult-plus">+</span>
+              <label for="adult-number">Взрослые:</label>
+              <button type="button" class="minus btn"></button>
+              <input type="text" name="adult-number" id="adult-number" value="2">
+              <button type="button" class="plus btn"></button>
             </div>
             <div class="children">
-              <label for="childeren-number"></label>
-              <input type="number" name="childeren-number" id="childeren-number">
-              <span class="child-minus">-</span>
-              <span class="child-plus">+</span>
+              <label for="childeren-number">Дети:</label>
+              <button type="button" class="minus btn"></button>
+              <input type="text" name="childeren-number" id="childeren-number" value="0">
+              <button type="button" class="plus btn"></button>
             </div>
-            <input class="hotel-submit-button" type="submit" value="Найти">
+            <input class="hotel-submit-button btn" type="submit" value="Найти">
           </form>
         </div>
       </main>
