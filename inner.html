@@ -56,11 +56,15 @@
       			<div class="cost">
       				<h4>Стоимость в сутки (Р):</h4>
               <div class="cost-fieldset">
-        				<input type="number" name="from-cost" placeholder="От 0">
-        				<input type="number" name="till-cost" placeholder="До 3000">
+        		    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="range">      				
-                <input type="range" name="costcount">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
               <button class="hotels-show" type="submit">Показать</button>
       			</div>
@@ -77,8 +81,8 @@
   						<li><a href="#">По рейтингу</a></li>
   					</ul>
   					<div class="results-arrows">
-  						<a class="arrow-up-active" href=""></a>
-  						<a class="arrow-down" href=""></a>
+  						<a class="arrow-up" href="#"></a>
+  						<a class="arrow-down-active" href="#"></a>
   					</div>
   				</header>
   				<!--Список отелей-->
@@ -88,12 +92,14 @@
   							<img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90">
   						</div>
   						<div class="hotels-info">
-  							<h2>Amara Resort &amp; Spa</h2>
+  							<h2>
+                  <a href="#" class="hotels-name">Amara Resort &amp; Spa</a>
+                </h2>
   							<span class="hotels-type">Гостиница</span>
   							<span class="hotels-cost">От 4000 Р.</span>
                 <div class="hotel-actions">
-    							<a href="#" class="hotels-about">Подробнее</a>
-    							<a href="#" class="hotels-book">Забронировать</a>
+    							<a href="#" class="btn hotels-about">Подробнее</a>
+    							<a href="#" class="btn hotels-book">Забронировать</a>
                 </div>
   						</div>
   						<div class="hotels-rating">
@@ -113,12 +119,14 @@
   							<img src="img/desert-quail.jpg" alt="Desert Quail Inn" width="135" height="90">
   						</div>
   						<div class="hotels-info">
-  							<h2>Desert Quail Inn</h2>
+  							<h2>
+                  <a href="#" class="hotels-name">Desert Quail Inn</a>
+                </h2>
   							<span class="hotels-type">Мотель</span>
   							<span class="hotels-cost">От 3000 Р.</span>
                 <div class="hotel-actions">
-                  <a href="#" class="hotels-about">Подробнее</a>
-                  <a href="#" class="hotels-book">Забронировать</a>
+                  <a href="#" class="btn hotels-about">Подробнее</a>
+                  <a href="#" class="btn hotels-book">Забронировать</a>
                 </div>
   						</div>
   						<div class="hotels-rating">
@@ -137,12 +145,14 @@
   							<img src="img/poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90">
   						</div>
   						<div class="hotels-info">
-  							<h2>Villas at Poco Diablo</h2>
+  							<h2>
+                  <a href="#" class="hotels-name">Villas at Poco Diablo</a>
+                </h2>
   							<span class="hotels-type">Апартаменты</span>
   							<span class="hotels-cost">От 2000 Р.</span>
                 <div class="hotel-actions">
-                  <a href="#" class="hotels-about">Подробнее</a>
-                  <a href="#" class="hotels-book">Забронировать</a>
+                  <a href="#" class="btn hotels-about">Подробнее</a>
+                  <a href="#" class="btn hotels-book">Забронировать</a>
                 </div>
   						</div>
   						<div class="hotels-rating">
