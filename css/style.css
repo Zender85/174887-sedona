@@ -650,7 +650,11 @@ ul {
 .filters h4 {
 	font-size: 16px;
 	color: #ffffff;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
+}
+
+.hotel-filters {
+	padding-bottom: 13px;
 }
 
 .infrastructure, 
@@ -667,8 +671,8 @@ ul {
 .hotel-filters label {
 	display: block;
 	color: #ffffff;
-	margin-bottom: 25px;
-	margin-left: 10px;
+	margin-bottom: 18px;
+	margin-left: 8px;
 	cursor: pointer;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -681,14 +685,14 @@ ul {
 	display:none;            
 }
 
-input[type="checkbox"] + label::before {
+.infrastructure label::before {
 	content: "";
 	display: inline-block;
 	height: 22px;
 	width: 26px;
 	position: relative;
 	top: 5px;
-	left: -10px;
+	left: -9px;
 	margin: 0 5px 0 0;
 	background-image: url('../img/sprite.png');
 	background-repeat: no-repeat;
@@ -701,26 +705,46 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .infrastructure {
-	width: 240px;
+	width: 250px;
 }
 
 .accomodation {
 	width: 288px;
 }
 
+.accomodation label::before {
+	content: "";
+	display: inline-block;
+	height: 22px;
+	width: 26px;
+	position: relative;
+	top: 5px;
+	left: -11px;
+	margin: 0 5px 0 0;
+	background-image: url('../img/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -10px -316px;
+}
+
+.accomodation label {
+	margin-left: 11px;
+}
+
 .cost {
 	float: right;
-	width: 330px;
+	width: 328px;
 }
 
 .cost h4 {
-	margin-bottom: 9px;
+	margin-bottom: 10px;
 }
 
 .cost-fieldset {
 	position: relative;
+	padding-top: 5px;
 	margin-bottom: 20px;
-	height: 36px;
+	margin-left: 10px;
+	height: 27px;
 	border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -739,7 +763,7 @@ input[type="checkbox"]:checked + label::before {
 .cost-fieldset label {
 	display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
   margin: 0; 
@@ -748,7 +772,11 @@ input[type="checkbox"]:checked + label::before {
 .cost-fieldset .min-price,
 .cost-fieldset .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 64px;
+}
+
+.cost-fieldset .max-price {
+	padding-left: 54px;
 }
 
 .cost-fieldset input {
@@ -763,6 +791,7 @@ input[type="checkbox"]:checked + label::before {
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+  margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -803,9 +832,9 @@ input[type="checkbox"]:checked + label::before {
 .hotels-show {
 	display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 31px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -829,7 +858,7 @@ input[type="checkbox"]:checked + label::before {
 .sort-by,
 .sort-by li {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: baseline;
 }
 
 .results-header span {
@@ -870,10 +899,10 @@ input[type="checkbox"]:checked + label::before {
 
 .results-arrows a {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	width: 11px;
 	height: 10px;
-	margin-left: 9px;
+	margin: 10px 1px 2px 7px;
 	background-image: url('../img/sprite.png');
 }
 
@@ -947,7 +976,7 @@ input[type="checkbox"]:checked + label::before {
 	display: inline-block;
 	vertical-align: top;
 	margin: 7px 0;
-	width: 110px;
+	width: 111px;
 }
 
 .hotel-actions {
@@ -957,7 +986,7 @@ input[type="checkbox"]:checked + label::before {
 
 .hotels-about,
 .hotels-book {
-	padding: 5px 17px;
+	padding: 4px 17px 5px 17px;
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
@@ -988,7 +1017,7 @@ input[type="checkbox"]:checked + label::before {
 .rating-stars {
 	position: absolute;
 	right: 6%;
-	top: 30px;
+	top: 29px;
 }
 
 .rating-stars li {
