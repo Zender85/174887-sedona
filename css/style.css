@@ -537,6 +537,10 @@ ul {
 	line-height: 0;
 }
 
+.map iframe {
+	border: none;
+}
+
 .footer-row {
 	display: flex;
 	justify-content: space-between;
