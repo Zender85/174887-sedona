@@ -101,7 +101,7 @@ ul {
 
 .sedona-photo {
 	position: relative;
-	background: url('../img/sedona-background.jpg');
+	background: #2f3f4c url(../img/sedona-background.jpg) no-repeat center top;
 	min-height: 510px;
 	max-height: 773px;
 }
@@ -326,10 +326,38 @@ ul {
 	animation: appear 0.6s;
 }
 
+@-webkit-keyframes appear {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+	}
+
+	50% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
 @keyframes appear {
-	0% {transform: translateX(-1000px);}
-	50% {transform: translateX(100px);}
-	100% {transform: translateX(0px);}
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+	}
+
+	50% {
+		-webkit-transform: translateX(100px);
+		transform: translateX(100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
 }
 
 .hotel-searchform label {
@@ -383,19 +411,19 @@ ul {
 	display: block;
 	content: '';
 	width: 21px;
-  height: 22px;
-  background-image: url('../img/sprite.png');
+	height: 22px;
+	background-image: url('../img/sprite.png');
 	background-repeat: no-repeat; 
-  background-position: -10px -190px;
+	background-position: -10px -190px;
 }
 
 .date-icon:hover:before {
 	cursor: pointer;
-  background-position: -10px -274px;
+	background-position: -10px -274px;
 }
 
 .date-icon:active:before {
-  background-position: -10px -232px;
+	background-position: -10px -232px;
 }
 
 .adult label {
@@ -456,43 +484,44 @@ ul {
 }
 
 .minus:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 11px;
-  height: 3px;
-  background: #a9a9a9;
-  left: 0;
-  right: 0;
-  top: 18px;
-  margin: 0 auto;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 11px;
+	height: 3px;
+	background: #a9a9a9;
+	left: 0;
+	right: 0;
+	top: 18px;
+	margin: 0 auto;
 }
 
 .plus:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 11px;
-  height: 3px;
-  background: #a9a9a9;
-  left: 0;
-  right: 0;
-  top: 18px;
-  margin: 0 auto;
+	content: '';
+	position: absolute;
+	display: block;
+	width: 11px;
+	height: 3px;
+	background: #a9a9a9;
+	left: 0;
+	right: 0;
+	top: 18px;
+	margin: 0 auto;
 }
 
 .plus:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 11px;
-  height: 3px;
-  background: #a9a9a9;
-  left: 0;
-  right: 0;
-  top: 18px;
-  margin: 0 auto;
-  transform: rotate(90deg);
+	content: '';
+	position: absolute;
+	display: block;
+	width: 11px;
+	height: 3px;
+	background: #a9a9a9;
+	left: 0;
+	right: 0;
+	top: 18px;
+	margin: 0 auto;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .plus:hover:before,
@@ -543,6 +572,8 @@ ul {
 }
 
 .footer-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -591,6 +622,7 @@ ul {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	background-image: url('../img/sprite.png');
 	background-repeat: no-repeat; 
@@ -647,7 +679,7 @@ ul {
 /*==== HOTELS PAGE STYLES ====*/
 
 .filters {
-	background-image: url('../img/filter-background.jpg');
+	background: #3d729c url('../img/filter-background.jpg') no-repeat center top;
 	padding: 0 6%;
 	padding-top: 7px;
 }
@@ -687,7 +719,7 @@ ul {
 }
 
 .hotel-filters input[type="checkbox"] {
-	display:none;            
+	display:none;
 }
 
 .infrastructure label::before {
@@ -751,7 +783,7 @@ input[type="checkbox"]:checked + label::before {
 	margin-left: 10px;
 	height: 27px;
 	border: 2px solid #ffffff;
-  border-radius: 2px;
+	border-radius: 2px;
 }
 
 .cost-fieldset:after {
@@ -762,22 +794,23 @@ input[type="checkbox"]:checked + label::before {
 	width: 2px;
 	height: 22px;
 	background: #ffffff;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
 .cost-fieldset label {
 	display: inline-block;
-  font-size: 14px;
-  line-height: 21px;
-  vertical-align: top;
-  cursor: pointer;
-  margin: 0; 
+	font-size: 14px;
+	line-height: 21px;
+	vertical-align: top;
+	cursor: pointer;
+	margin: 0; 
 }
 
 .cost-fieldset .min-price,
 .cost-fieldset .max-price {
-  width: 90px;
-  padding-left: 64px;
+	width: 90px;
+	padding-left: 64px;
 }
 
 .cost-fieldset .max-price {
@@ -785,72 +818,72 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .cost-fieldset input {
-  width: 50px;
-  margin: 0;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
 }
 
 .range-controls {
-  position: relative;
-  margin-bottom: 32px;
-  margin-left: 10px;
+	position: relative;
+	margin-bottom: 32px;
+	margin-left: 10px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+	left: 80%;
 }
 
 .hotels-show {
 	display: block;
-  margin: 0 auto;
-  padding: 6px 31px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+	margin: 0 auto;
+	padding: 6px 31px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .hotels-show:hover {
 	color: #000000;
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .results-header {
