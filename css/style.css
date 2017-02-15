@@ -310,7 +310,7 @@ ul {
 .hotel-searchform {
 	display: none;
 	position: absolute;
-	max-width: 568px;
+	width: 568px;
 	box-sizing: border-box;
 	padding: 55px;
 	z-index: 1;
